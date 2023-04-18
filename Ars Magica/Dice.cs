@@ -7,4 +7,11 @@ public class Dice
     Random rnd = new Random();
     return rnd.Next(0, 10); 
   }
+    //public Combatant com()
+    //{
+    //    Combatant c = new();
+        
+
+    //    return c;
+    //}
 }

@@ -25,10 +25,10 @@ public class UnitTest1
     Combatant c = new();
     bool armorExists;
     bool weaponExists;
-
-    armorExists => c.Armor != null;
+        
+    armorExists = c.Armor != null;
     
-    weaponExists => c.Weapon != null;
+    weaponExists = c.Weapon != null;
     
     Assert.IsTrue(weaponExists & armorExists);
 
