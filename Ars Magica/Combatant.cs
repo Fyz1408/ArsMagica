@@ -18,6 +18,7 @@ namespace Ars_Magica
             Weapon = "Hammer";
             Armor = "Plade";
         }
+        private List<>
 
 
 
