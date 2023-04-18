@@ -20,5 +20,21 @@ namespace Ars_Magica
         public string Eff_Rn { get; set; }
         public string Cost { get; set; }
 
+        public Weapon()
+        {
+
+        }
+
+        private List<Weapon> WeaponList()
+        {
+
+            List<Weapon> Wlist = new List<Weapon>();
+
+            Wlist.Add(new Weapon(Name = "Fist/kick", Init = 1, Atk = 0, Dfn = 0, Dam = 0, Str = 0, Load = 0, Spc = 0, Eff_Rn = "Touch", Cost = ""));
+
+
+            return Wlist;
+        }
+
     }
 }
