@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ars Magica", "Ars Magica\Ars Magica.csproj", "{2CB97E08-AFC1-4F65-BAEB-5DB7E979DAAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArsMagicaTest", "ArsMagicaTest\ArsMagicaTest.csproj", "{FCD303F3-A3C6-4912-9628-53954AD234DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CB97E08-AFC1-4F65-BAEB-5DB7E979DAAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB97E08-AFC1-4F65-BAEB-5DB7E979DAAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB97E08-AFC1-4F65-BAEB-5DB7E979DAAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB97E08-AFC1-4F65-BAEB-5DB7E979DAAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCD303F3-A3C6-4912-9628-53954AD234DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD303F3-A3C6-4912-9628-53954AD234DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD303F3-A3C6-4912-9628-53954AD234DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD303F3-A3C6-4912-9628-53954AD234DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
