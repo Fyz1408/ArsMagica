@@ -60,4 +60,22 @@ public class UnitTest1
         Assert.IsTrue(weaponExists & armorExists);
 
     }
+    
+    [TestMethod]
+    public void ValidateFight()
+    {
+        // Arrange
+        Combatant c1 = new();
+        Combatant c2 = new();
+        Arena a = new();
+        winner;
+        
+        // Act
+        winner = a.Fight(c1, c2);
+       
+        // Assert
+        Assert.IsNotNull(winner);
+        //Assert.IsTrue(winner = c1 || winner = c2);
+
+    }
 }

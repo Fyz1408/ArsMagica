@@ -7,5 +7,4 @@ public class Dice
     Random rnd = new Random();
     return rnd.Next(0, 10); 
   }
-    
 }
