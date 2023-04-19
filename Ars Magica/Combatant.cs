@@ -9,15 +9,14 @@
 
         List<string> list;
 
-        public Combatant(Armor armor, Weapon weapon)
+        public Combatant(string name, Armor armor, Weapon weapon)
         {
-            Name = CombattentRandomNameList();
+            Name = name;
             Armor = armor;
             Weapon = weapon;
-
         }
 
-        private string CombattentRandomNameList()
+        private string GenerateCombattenName()
         {
             list = new List<string>
             {

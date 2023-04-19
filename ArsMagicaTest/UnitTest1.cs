@@ -25,7 +25,7 @@ public class UnitTest1
     bool armorExists;
     bool weaponExists;
 
-    c = new Combatant(Armor.ArmorList()[RND.Range(0, 8)], Weapon.WeaponList()[RND.Range(0, 8)]);
+    c = new Combatant("Boris", Armor.ArmorList()[RND.Range(0, 8)], Weapon.WeaponList()[RND.Range(0, 8)]);
     armorExists = c.Armor != null;
     weaponExists = c.Weapon != null;
 
@@ -63,6 +63,17 @@ public class UnitTest1
     Assert.IsNotNull(amr.Prot);
   }
 
+  [TestMethod]
+  public void RetrieveCombatantFromName()
+  {
+    // Arrange
+    GameController gc = new GameController();
+    Combatant gcFound;
 
+    // Act
+    gcFound = gc.FindCombatantFromName("LaRs");
 
+    // Assert
+    Assert.IsNotNull(gcFound);
+  }
 }

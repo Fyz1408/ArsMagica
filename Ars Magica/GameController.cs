@@ -14,8 +14,12 @@ namespace Ars_Magica
 
     public GameController()
     {
-      C1 = new Combatant(Armor.ArmorList()[RND.Range(0, 8)], Weapon.WeaponList()[RND.Range(0, 8)]);
-      C2 = new Combatant(Armor.ArmorList()[RND.Range(0, 8)], Weapon.WeaponList()[RND.Range(0, 8)]);
+      Combatants = new List<Combatant>();
+      C1 = new Combatant("Lars", Armor.ArmorList()[RND.Range(0, 9)], Weapon.WeaponList()[RND.Range(0, 7)]);
+      C2 = new Combatant("Maximilianus", Armor.ArmorList()[RND.Range(0, 9)], Weapon.WeaponList()[RND.Range(0, 7)]);
+      
+      Combatants.Add(C1);
+      Combatants.Add(C2);
     }
 
     public Combatant Fight()
@@ -25,11 +29,11 @@ namespace Ars_Magica
 
       return c1Roll > c2Roll ? C1 : C2;
     }
-    
-    
-    
-    
-    
+
+    public Combatant? FindCombatantFromName(string name)
+    {
+      return Combatants.Find(c => c.Name.ToLower() == name.ToLower());
+    }
     
   }
 }
