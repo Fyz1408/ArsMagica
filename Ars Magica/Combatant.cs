@@ -11,14 +11,13 @@
 
         public Combatant(Armor armor, Weapon weapon)
         {
-
-            Name = "peter";
+            Name = CombattentRandomNameList();
             Armor = armor;
             Weapon = weapon;
 
         }
 
-        public List<string> CombattentRandomNameList()
+        private string CombattentRandomNameList()
         {
             list = new List<string>
             {
@@ -33,7 +32,7 @@
                 (Name = "Nanny"),
                 (Name = "Xander")
             };
-            return list;
+            return list[RND.Range(0, 9)];
         }
 
     }

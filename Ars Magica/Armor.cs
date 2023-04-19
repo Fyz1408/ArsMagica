@@ -22,7 +22,7 @@ public class Armor
   
   public double Load { get; set; }
 
-  internal static List<Armor> ArmorList()
+  public static List<Armor> ArmorList()
   {
 
     List<Armor> AL = new List<Armor>();
@@ -41,10 +41,4 @@ public class Armor
     return AL;
   }
 
-  public Armor GetRandomArmor()
-  {
-    Armor a;
-    a = ArmorList()[RND.Range(0, 8)];
-    return a;
-  }
 }
