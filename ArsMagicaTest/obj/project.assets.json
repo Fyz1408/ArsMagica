@@ -6357,11 +6357,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HFGF\\Source\\Repos\\ArsMagica\\ArsMagicaTest\\ArsMagicaTest.csproj",
+      "projectUniqueName": "C:\\Users\\HFGF\\source\\repos\\ArsMagica\\ArsMagicaTest\\ArsMagicaTest.csproj",
       "projectName": "ArsMagicaTest",
-      "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\ArsMagica\\ArsMagicaTest\\ArsMagicaTest.csproj",
+      "projectPath": "C:\\Users\\HFGF\\source\\repos\\ArsMagica\\ArsMagicaTest\\ArsMagicaTest.csproj",
       "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HFGF\\Source\\Repos\\ArsMagica\\ArsMagicaTest\\obj\\",
+      "outputPath": "C:\\Users\\HFGF\\source\\repos\\ArsMagica\\ArsMagicaTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HFGF\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6378,8 +6378,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\HFGF\\Source\\Repos\\ArsMagica\\Ars Magica\\Ars Magica.csproj": {
-              "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\ArsMagica\\Ars Magica\\Ars Magica.csproj"
+            "C:\\Users\\HFGF\\source\\repos\\ArsMagica\\Ars Magica\\Ars Magica.csproj": {
+              "projectPath": "C:\\Users\\HFGF\\source\\repos\\ArsMagica\\Ars Magica\\Ars Magica.csproj"
             }
           }
         }

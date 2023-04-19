@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HFGF\\Source\\Repos\\ArsMagica\\Ars Magica\\Ars Magica.csproj": {}
+    "C:\\Users\\HFGF\\source\\repos\\ArsMagica\\Ars Magica\\Ars Magica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HFGF\\Source\\Repos\\ArsMagica\\Ars Magica\\Ars Magica.csproj": {
+    "C:\\Users\\HFGF\\source\\repos\\ArsMagica\\Ars Magica\\Ars Magica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HFGF\\Source\\Repos\\ArsMagica\\Ars Magica\\Ars Magica.csproj",
+        "projectUniqueName": "C:\\Users\\HFGF\\source\\repos\\ArsMagica\\Ars Magica\\Ars Magica.csproj",
         "projectName": "Ars Magica",
-        "projectPath": "C:\\Users\\HFGF\\Source\\Repos\\ArsMagica\\Ars Magica\\Ars Magica.csproj",
+        "projectPath": "C:\\Users\\HFGF\\source\\repos\\ArsMagica\\Ars Magica\\Ars Magica.csproj",
         "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\HFGF\\Source\\Repos\\ArsMagica\\Ars Magica\\obj\\",
         "projectStyle": "PackageReference",
