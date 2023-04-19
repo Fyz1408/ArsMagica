@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ars_Magica
+﻿namespace Ars_Magica
 {
 
     public class Weapon
@@ -28,18 +21,18 @@ namespace Ars_Magica
         }
         public Weapon(string name, int init, int atk, int dfn, int dam, int str, double load, int spc, string eff_Rn, string cost)
         {
-            this.Name = name;
-            this.Init = init;
-            this.Atk = atk;
-            this.Dfn = dfn;
-            this.Dam = dam;
-            this.Str = str;
-            this.Load = load;
-            this.Spc = spc;
-            this.Eff_Rn = eff_Rn;
-            this.Cost = cost;
+            Name = name;
+            Init = init;
+            Atk = atk;
+            Dfn = dfn;
+            Dam = dam;
+            Str = str;
+            Load = load;
+            Spc = spc;
+            Eff_Rn = eff_Rn;
+            Cost = cost;
         }
-        internal static List<Weapon> WeaponList()
+        public static List<Weapon> WeaponList()
         {
             List<Weapon> Wlist = new List<Weapon>();
 
@@ -53,14 +46,6 @@ namespace Ars_Magica
 
 
             return Wlist;
-        }
-        public Weapon GetRandomWeapon()
-        {
-
-            //WeaponList();
-            Weapon weapon = new();
-            weapon = WeaponList()[RND.Range(0, 8)];
-            return weapon;
         }
 
     }

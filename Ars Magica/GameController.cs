@@ -6,23 +6,22 @@ using System.Threading.Tasks;
 
 namespace Ars_Magica
 {
-    public class GameController
+  public class GameController
+  {
+    private List<Armor> ListOfArmor;
+    private List<Weapon> ListOfWeapons;
+    public Combatant C1;
+    public Combatant C2;
+
+    public GameController()
     {
-        private List<Armor> ListOfArmor;
-        private List<Weapon> ListOfWeapons;
-        public Combatant C1;
-        public Combatant C2;
-
-        public GameController()
-        {
-            ListOfArmor = Armor.ArmorList();
-            ListOfWeapons = Weapon.WeaponList();
-            Armor a = new Armor();
-            Weapon w = new Weapon();
-
-            C1 = new Combatant(a.GetRandomArmor(), w.GetRandomWeapon());
-            C2 = new Combatant(a.GetRandomArmor(), w.GetRandomWeapon());
-        }
+      Combatants = new List<Combatant>();
+      C1 = new Combatant("Lars", Armor.ArmorList()[RND.Range(0, 9)], Weapon.WeaponList()[RND.Range(0, 7)]);
+      C2 = new Combatant("Maximilianus", Armor.ArmorList()[RND.Range(0, 9)], Weapon.WeaponList()[RND.Range(0, 7)]);
+      
+      Combatants.Add(C1);
+      Combatants.Add(C2);
+    }
 
         public Combatant Fight()
         {

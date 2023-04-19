@@ -9,16 +9,14 @@
 
         List<string> list;
 
-        public Combatant(Armor armor, Weapon weapon)
+        public Combatant(string name, Armor armor, Weapon weapon)
         {
-
-            Name = "peter";
+            Name = name;
             Armor = armor;
             Weapon = weapon;
-
         }
 
-        public List<string> CombattentRandomNameList()
+        private string GenerateCombattenName()
         {
             list = new List<string>
             {
@@ -33,7 +31,7 @@
                 (Name = "Nanny"),
                 (Name = "Xander")
             };
-            return list;
+            return list[RND.Range(0, 9)];
         }
 
     }
