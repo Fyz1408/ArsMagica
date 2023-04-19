@@ -10,7 +10,6 @@ namespace Ars_Magica
 
     public class Weapon
     {
-        List<Weapon> Wlist;
         public string Name { get; set; }
         public int Init { get; set; }
         public int Atk { get; set; }
@@ -27,22 +26,30 @@ namespace Ars_Magica
 
 
         }
-        public Weapon(string Name, int Init, int Atk, int Dfn, int Dam, int Str, double Load, int Spc, string Eff_Rn, string Cost)
+        public Weapon(string name, int init, int atk, int dfn, int dam, int str, double load, int spc, string eff_Rn, string cost)
         {
-
+            this.Name = name;
+            this.Init = init;
+            this.Atk = atk;
+            this.Dfn = dfn;
+            this.Dam = dam;
+            this.Str = str;
+            this.Load = load;
+            this.Spc = spc;
+            this.Eff_Rn = eff_Rn;
+            this.Cost = cost;
         }
-        private List<Weapon> WeaponList()
+        internal static List<Weapon> WeaponList()
         {
+            List<Weapon> Wlist = new List<Weapon>();
 
-            Wlist = new List<Weapon>();
-
-            Wlist.Add(new Weapon(Name = "Fist/Kick",    Init = 1, Atk = 0, Dfn = 0, Dam = 0, Str = 0, Load = 0,     Spc = 0, Eff_Rn = "", Cost = ""));
-            Wlist.Add(new Weapon(Name = "Gauntlet",     Init = 1, Atk = 0, Dfn = 1, Dam = 1, Str = 0, Load = 0,     Spc = 0, Eff_Rn = "Touch", Cost = "Inexpensive"));
-            Wlist.Add(new Weapon(Name = "Knife/Sap",    Init = 1, Atk = 0, Dfn = 1, Dam = 2, Str = 0, Load = 0,     Spc = 0, Eff_Rn = "Touch", Cost = "Inexpensive"));
-            Wlist.Add(new Weapon(Name = "Dagger",       Init = 2, Atk = 1, Dfn = 2, Dam = 3, Str = 0, Load = 0,     Spc = 0, Eff_Rn = "Touch", Cost = "Inexpensive"));
-            Wlist.Add(new Weapon(Name = "Shortsword",   Init = 4, Atk = 2, Dfn = 3, Dam = 3, Str = -2, Load = -0.5, Spc = 1, Eff_Rn = "Reach", Cost = "Standart"));
-            Wlist.Add(new Weapon(Name = "Longsword",    Init = 3, Atk = 1, Dfn = 4, Dam = 4, Str = -2, Load = -0.5, Spc = 1, Eff_Rn = "Reach", Cost = "Standart"));
-            Wlist.Add(new Weapon(Name = "Tower Shield", Init = -3, Atk = -1, Dfn = 6, Dam = 0, Str = 1, Load = -2,    Spc = 1, Eff_Rn = "Reach", Cost = "Expensive"));
+            Wlist.Add(new Weapon("Fist/Kick", 1, 0, 0, 0, 0, 0, 0, "", ""));
+            Wlist.Add(new Weapon("Gauntlet", 1, 0, 1, 1, 0, 0, 0, "Touch", "Inexpensive"));
+            Wlist.Add(new Weapon("Knife/Sap", 1, 0, 1, 2, 0, 0, 0, "Touch", "Inexpensive"));
+            Wlist.Add(new Weapon("Dagger", 2, 1, 2, 3, 0, 0, 0, "Touch", "Inexpensive"));
+            Wlist.Add(new Weapon("Shortsword", 4, 2, 3, 3, -2, -0.5, 1, "Reach", "Standart"));
+            Wlist.Add(new Weapon("Longsword", 3, 1, 4, 4, -2, -0.5, 1, "Reach", "Standart"));
+            Wlist.Add(new Weapon("Tower Shield", -3, -1, 6, 0, 1, -2, 1, "Reach", "Expensive"));
 
 
             return Wlist;
@@ -50,9 +57,9 @@ namespace Ars_Magica
         public Weapon GetRandomWeapon()
         {
 
-            WeaponList();
+            //WeaponList();
             Weapon weapon = new();
-            weapon = Wlist[RND.Range(0, 8)];
+            weapon = WeaponList()[RND.Range(0, 8)];
             return weapon;
         }
 
