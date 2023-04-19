@@ -41,4 +41,9 @@ public class Armor
     return AL;
   }
 
+  public Armor GetArmorStatsFromName(string name)
+  {
+    return ArmorList().Find(a => a.Name.ToLower() == name.ToLower());
+  }
+
 }

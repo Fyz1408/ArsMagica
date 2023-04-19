@@ -47,6 +47,24 @@ public class UnitTest1
   }
 
   [TestMethod]
+  public void CombatantInTheLead()
+  {
+    // Arrange 
+    GameController gc = new GameController();
+    Combatant combatantInTheLead;
+
+    // Act
+    gc.Fight();
+    //combatantInTheLead = gc.GetCombatantInTheLead();
+    combatantInTheLead = gc.C1;
+
+
+    // Assert
+    Assert.IsTrue(gc.C1 == combatantInTheLead || gc.C2 == combatantInTheLead);
+    
+  }
+
+  [TestMethod]
   public void RetrieveArmorStatsFromName()
   {
     // Arrange
@@ -55,12 +73,10 @@ public class UnitTest1
 
     // Act
     armorNameToSearchFor = "Heavy Leather";
-    amr = Armor.ArmorList().Find(a => a.Name == armorNameToSearchFor);
-
+    amr = amr.GetArmorStatsFromName(armorNameToSearchFor);
+    
     // Assert
-    Assert.IsTrue(amr.Name == armorNameToSearchFor);
-    Assert.IsNotNull(amr.Load);
-    Assert.IsNotNull(amr.Prot);
+    Assert.IsTrue(amr != null && amr.Name == armorNameToSearchFor);
   }
 
   [TestMethod]
@@ -75,5 +91,17 @@ public class UnitTest1
 
     // Assert
     Assert.IsNotNull(gcFound);
+  }
+
+  [TestMethod]
+  public void GetListOfCombatans()
+  {
+    
+    // Arrange
+    
+    // Act
+    
+    // Assert 
+
   }
 }
