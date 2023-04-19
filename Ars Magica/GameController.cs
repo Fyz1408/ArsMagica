@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace Ars_Magica
 {
   public class GameController
-  {
+  { 
+    private List<Combatant> Combatants;
     private List<Armor> ListOfArmor;
     private List<Weapon> ListOfWeapons;
     public Combatant C1;
@@ -21,6 +22,11 @@ namespace Ars_Magica
       
       Combatants.Add(C1);
       Combatants.Add(C2);
+    }
+    
+    public Combatant? FindCombatantFromName(string name)
+    {
+        return Combatants.Find(c => c.Name.ToLower() == name.ToLower());
     }
 
         public Combatant Fight()
