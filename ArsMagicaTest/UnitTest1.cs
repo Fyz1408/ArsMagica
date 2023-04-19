@@ -9,11 +9,10 @@ public class UnitTest1
     public void IsDiceNumberValid()
     {
         // Arrange
-        Dice d = new();
         int rolledNumber;
 
         // Act
-        rolledNumber = d.Roll();
+        rolledNumber = RND.Roll();
 
         // Assert
         Assert.IsTrue(rolledNumber >= 0 & rolledNumber < 10);
@@ -22,10 +21,13 @@ public class UnitTest1
     [TestMethod]
     public void CombatantGenerated()
     {
-        Combatant c = new();
+        Armor a = new Armor();
+        Weapon w = new Weapon();
+        Combatant c; 
         bool armorExists;
         bool weaponExists;
 
+        c = new Combatant(a.GetRandomArmor(), w.GetRandomWeapon());
         armorExists = c.Armor != null;
 
         weaponExists = c.Weapon != null;
@@ -33,49 +35,19 @@ public class UnitTest1
         Assert.IsTrue(weaponExists & armorExists);
 
     }
-    [TestMethod]
-    public void CombatantGeneratedWeaponHasVallidWeaponStats()
-    {
-        // Arrange
-        Combatant c = new();
-        //int Init;
-        //int Atk;
-        //int Dfn;
-        //int Dam;
-        //int Str;
-        //float Load;
-        //int Spc;
-        //string Eff_Rn;
-        //string Cost;
-        Weapon w = new();
 
-        c.Weapon = w;
-        Armor a = new();
-
-        c.Armor = a;
-        // Act
-        
-       
-        // Assert
-        Assert.IsTrue(weaponExists & armorExists);
-
-    }
-    
     [TestMethod]
     public void ValidateFight()
     {
         // Arrange
-        Combatant c1 = new();
-        Combatant c2 = new();
-        Arena a = new();
-        winner;
+        GameController gc = new GameController();
+        Combatant winner;
         
         // Act
-        winner = a.Fight(c1, c2);
+        winner = gc.Fight();
        
         // Assert
         Assert.IsNotNull(winner);
-        //Assert.IsTrue(winner = c1 || winner = c2);
 
     }
 }

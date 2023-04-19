@@ -9,26 +9,13 @@
 
         List<string> list;
 
-        public Combatant()
+        public Combatant(Armor armor, Weapon weapon)
         {
-            Name = "lars";
-            Hp = 7;
-            Weapon = Weapon.GetRandomWeapon();
-            Armor = new();
-        }
 
-
-        public Combatant(string name, Armor armor, Weapon weapon)
-        {
-            if (list.Count == 0)
-            {
-                CombattentRandomNameList();
-            }
-            int R = RND.Range(0,10);
-            Name = list[0];
+            Name = "peter";
             Armor = armor;
             Weapon = weapon;
-            list.RemoveAt(0);
+
         }
 
         public List<string> CombattentRandomNameList()

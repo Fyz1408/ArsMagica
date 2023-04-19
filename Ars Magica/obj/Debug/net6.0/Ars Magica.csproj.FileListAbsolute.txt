@@ -10,15 +10,15 @@
 /Users/daniellykke/RiderProjects/Ars Magica/Ars Magica/obj/Debug/net6.0/refint/Ars Magica.dll
 /Users/daniellykke/RiderProjects/Ars Magica/Ars Magica/obj/Debug/net6.0/Ars Magica.pdb
 /Users/daniellykke/RiderProjects/Ars Magica/Ars Magica/obj/Debug/net6.0/ref/Ars Magica.dll
-C:\Users\HFGF\Source\Repos\ArsMagica\Ars Magica\bin\Debug\net6.0\Ars Magica.deps.json
-C:\Users\HFGF\Source\Repos\ArsMagica\Ars Magica\bin\Debug\net6.0\Ars Magica.dll
-C:\Users\HFGF\Source\Repos\ArsMagica\Ars Magica\bin\Debug\net6.0\Ars Magica.pdb
-C:\Users\HFGF\Source\Repos\ArsMagica\Ars Magica\obj\Debug\net6.0\Ars Magica.csproj.AssemblyReference.cache
-C:\Users\HFGF\Source\Repos\ArsMagica\Ars Magica\obj\Debug\net6.0\Ars Magica.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HFGF\Source\Repos\ArsMagica\Ars Magica\obj\Debug\net6.0\Ars Magica.AssemblyInfoInputs.cache
-C:\Users\HFGF\Source\Repos\ArsMagica\Ars Magica\obj\Debug\net6.0\Ars Magica.AssemblyInfo.cs
-C:\Users\HFGF\Source\Repos\ArsMagica\Ars Magica\obj\Debug\net6.0\Ars Magica.csproj.CoreCompileInputs.cache
-C:\Users\HFGF\Source\Repos\ArsMagica\Ars Magica\obj\Debug\net6.0\Ars Magica.dll
-C:\Users\HFGF\Source\Repos\ArsMagica\Ars Magica\obj\Debug\net6.0\refint\Ars Magica.dll
-C:\Users\HFGF\Source\Repos\ArsMagica\Ars Magica\obj\Debug\net6.0\Ars Magica.pdb
-C:\Users\HFGF\Source\Repos\ArsMagica\Ars Magica\obj\Debug\net6.0\ref\Ars Magica.dll
+C:/Users/HFGF/Source/Repos/ArsMagica/Ars Magica/bin/Debug/net6.0/Ars Magica.deps.json
+C:/Users/HFGF/Source/Repos/ArsMagica/Ars Magica/bin/Debug/net6.0/Ars Magica.dll
+C:/Users/HFGF/Source/Repos/ArsMagica/Ars Magica/bin/Debug/net6.0/Ars Magica.pdb
+C:/Users/HFGF/Source/Repos/ArsMagica/Ars Magica/obj/Debug/net6.0/Ars Magica.csproj.AssemblyReference.cache
+C:/Users/HFGF/Source/Repos/ArsMagica/Ars Magica/obj/Debug/net6.0/Ars Magica.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/HFGF/Source/Repos/ArsMagica/Ars Magica/obj/Debug/net6.0/Ars Magica.AssemblyInfoInputs.cache
+C:/Users/HFGF/Source/Repos/ArsMagica/Ars Magica/obj/Debug/net6.0/Ars Magica.AssemblyInfo.cs
+C:/Users/HFGF/Source/Repos/ArsMagica/Ars Magica/obj/Debug/net6.0/Ars Magica.csproj.CoreCompileInputs.cache
+C:/Users/HFGF/Source/Repos/ArsMagica/Ars Magica/obj/Debug/net6.0/Ars Magica.dll
+C:/Users/HFGF/Source/Repos/ArsMagica/Ars Magica/obj/Debug/net6.0/refint/Ars Magica.dll
+C:/Users/HFGF/Source/Repos/ArsMagica/Ars Magica/obj/Debug/net6.0/Ars Magica.pdb
+C:/Users/HFGF/Source/Repos/ArsMagica/Ars Magica/obj/Debug/net6.0/ref/Ars Magica.dll

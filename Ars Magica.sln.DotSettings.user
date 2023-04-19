@@ -1,7 +1,6 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=17dfc496_002D08fc_002D48b4_002Da867_002Dcaf7ba22cbbb/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="IsDiceNumberValid" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;MSTest::FCD303F3-A3C6-4912-9628-53954AD234DC::net6.0::ArsMagicaTest.UnitTest1.IsDiceNumberValid&lt;/TestId&gt;
-    &lt;TestId&gt;MSTest::FCD303F3-A3C6-4912-9628-53954AD234DC::net6.0::ArsMagicaTest.UnitTest1.CombatantGenerated&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::FCD303F3-A3C6-4912-9628-53954AD234DC::net6.0::ArsMagicaTest.UnitTest1&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

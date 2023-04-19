@@ -9,9 +9,7 @@
         }
         public static int Roll()
         {
-            //kan flytes over til RND
-            Random rnd = new Random();
-            return rnd.Next(0, 10);
+            return Random.Next(0, 10);
         }
     }
 }
