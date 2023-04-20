@@ -47,6 +47,16 @@
 
             return Wlist;
         }
+        
+        public Weapon? GetWeaponStatsFromName(string name)
+        {
+            return WeaponList().Find(a => a.Name.ToLower() == name.ToLower());
+        }
+
+        public string GetAll()
+        {
+            return Name;
+        }
 
     }
 }

@@ -89,7 +89,7 @@ namespace Ars_Magica
 
             }
 
-
+            Winner = C1;
             return Winner;
         }
         private Stats Stat(Combatant combatant)
