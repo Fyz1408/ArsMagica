@@ -6352,32 +6352,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/daniellykke/.nuget/packages/": {}
+    "C:\\Users\\HFGF\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/daniellykke/RiderProjects/Ars Magica/ArsMagicaTest/ArsMagicaTest.csproj",
+      "projectUniqueName": "C:\\Users\\HFGF\\source\\repos\\ArsMagica\\ArsMagicaTest\\ArsMagicaTest.csproj",
       "projectName": "ArsMagicaTest",
-      "projectPath": "/Users/daniellykke/RiderProjects/Ars Magica/ArsMagicaTest/ArsMagicaTest.csproj",
-      "packagesPath": "/Users/daniellykke/.nuget/packages/",
-      "outputPath": "/Users/daniellykke/RiderProjects/Ars Magica/ArsMagicaTest/obj/",
+      "projectPath": "C:\\Users\\HFGF\\source\\repos\\ArsMagica\\ArsMagicaTest\\ArsMagicaTest.csproj",
+      "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HFGF\\source\\repos\\ArsMagica\\ArsMagicaTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/daniellykke/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\HFGF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/daniellykke/RiderProjects/Ars Magica/Ars Magica/Ars Magica.csproj": {
-              "projectPath": "/Users/daniellykke/RiderProjects/Ars Magica/Ars Magica/Ars Magica.csproj"
+            "C:\\Users\\HFGF\\source\\repos\\ArsMagica\\Ars Magica\\Ars Magica.csproj": {
+              "projectPath": "C:\\Users\\HFGF\\source\\repos\\ArsMagica\\Ars Magica\\Ars Magica.csproj"
             }
           }
         }
@@ -6425,7 +6427,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.406/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }
