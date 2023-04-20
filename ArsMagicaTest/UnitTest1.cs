@@ -5,6 +5,8 @@ namespace ArsMagicaTest;
 [TestClass]
 public class UnitTest1
 {
+  public TestContext? TestContext { get; set; }
+
   [TestMethod]
   public void IsDiceNumberValid()
   {
@@ -25,7 +27,7 @@ public class UnitTest1
     bool armorExists;
     bool weaponExists;
 
-    c = new Combatant("Boris", Armor.ArmorList()[RND.Range(0, 8)], Weapon.WeaponList()[RND.Range(0, 8)]);
+    c = new Combatant("Boris", Armor.ArmorList()[RND.Range(0, 8)], Weapon.WeaponList()[RND.Range(0, 7)]);
     armorExists = c.Armor != null;
     weaponExists = c.Weapon != null;
 
@@ -61,7 +63,6 @@ public class UnitTest1
 
     // Assert
     Assert.IsTrue(gc.C1 == combatantInTheLead || gc.C2 == combatantInTheLead);
-    
   }
 
   [TestMethod]
@@ -75,8 +76,25 @@ public class UnitTest1
     armorNameToSearchFor = "Heavy Leather";
     amr = amr.GetArmorStatsFromName(armorNameToSearchFor);
     
+    
     // Assert
     Assert.IsTrue(amr != null && amr.Name == armorNameToSearchFor);
+  }
+
+  [TestMethod]
+  public void RetrieveWeaponStatsFromName()
+  {
+    // Arrange
+    Weapon wpn = new Weapon();
+    string weaponNameToSearchFor;
+
+    // Act
+    weaponNameToSearchFor = "Dagger";
+    wpn = wpn.GetWeaponStatsFromName(weaponNameToSearchFor);
+
+
+    // Assert
+    Assert.IsTrue(wpn != null && wpn.Name == weaponNameToSearchFor);
   }
 
   [TestMethod]
@@ -84,24 +102,33 @@ public class UnitTest1
   {
     // Arrange
     GameController gc = new GameController();
-    Combatant gcFound;
+    Combatant? cFound;
+    string txtToWrite = $"No combatant found";
 
     // Act
-    gcFound = gc.FindCombatantFromName("LaRs");
+    cFound = gc.FindCombatantFromName("lArS");
+
+    if (cFound != null)
+    {
+      txtToWrite = $"Combatant found: '{cFound.Name}'";
+    }
+
+    TestContext?.WriteLine(txtToWrite);
 
     // Assert
-    Assert.IsNotNull(gcFound);
+    Assert.IsNotNull(cFound);
   }
 
   [TestMethod]
   public void GetListOfCombatans()
   {
-    
     // Arrange
-    
-    // Act
-    
-    // Assert 
+    GameController gc = new GameController();
+    bool fileExists;
 
+    // Act
+    //gc.SaveCombatantHistoryToFile();
+
+    // Assert 
   }
 }

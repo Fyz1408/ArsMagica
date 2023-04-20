@@ -6,6 +6,10 @@
         public string Name { get; set; }
         public Armor Armor { get; set; }
         public Weapon Weapon { get; set; }
+        
+        public bool IsAlive { get; set; }
+        
+        public Combatant KilledBy { get; set; }
 
         List<string> list;
 
