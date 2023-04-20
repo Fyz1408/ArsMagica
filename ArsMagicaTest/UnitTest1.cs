@@ -40,12 +40,17 @@ public class UnitTest1
     // Arrange
     GameController gc = new GameController();
     Combatant winner;
+    Combatant loser;
 
     // Act
-    winner = gc.Fight();
-
+    winner = gc.FightNow();
+    loser = gc.Loser();
+        
+        TestContext.WriteLine("Winner Name "+winner.Name+" Winner HP "+winner.Hp+" Weapon "+winner.Weapon.Name + " Weapon Atk "+winner.Weapon.Atk+" Armor "+winner.Armor.Name+" ArmorProt " +winner.Armor.Prot);
+        TestContext.WriteLine("Losser Name "+ loser.Name+" Winner HP "+ loser.Hp+" Weapon "+ loser.Weapon.Name + " Weapon Atk "+ loser.Weapon.Atk+" Armor "+ loser.Armor.Name+" ArmorProt " + loser.Armor.Prot);
     // Assert
     Assert.IsNotNull(winner);
+
   }
 
   [TestMethod]

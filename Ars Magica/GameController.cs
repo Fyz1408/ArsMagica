@@ -61,7 +61,7 @@ namespace Ars_Magica
 
             while (C1.Hp > 0 & C2.Hp > 0)
             {
-                Winner = C1;
+                Winner = C2;
                 int Rolldice = 0;
                 int doublenumber = 2;
                 int c1Roll = RND.Roll();
@@ -141,6 +141,10 @@ namespace Ars_Magica
             }
 
             return Winner;
+        }
+        public Combatant Loser()
+        {
+            return C2;
         }
         private Stats Stat(Combatant combatant)
         {
